@@ -36,9 +36,17 @@ header {
   transition: 1s;
 
   .nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #465544;
     padding: 0;
     margin: 0;
     list-style: none;
+    transition: 0.5s;
   }
   .nav-item {
     font-family: "Poppins", sans-serif;
@@ -82,26 +90,26 @@ header {
   }
 
   .nav-toggler {
+    display: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 30;
+    transition: 0.5s;
   }
-  .line1,
-  .line2,
-  .line3 {
+  .line {
     width: 100%;
     height: 3px;
     margin: 7px;
     background-color: $light;
     z-index: 30;
+    transition: 0.5s ease;
   }
 }
 
 .logo {
   height: 50px;
   width: 250px;
-  z-index: 11;
 }
 
 header a {
@@ -126,7 +134,12 @@ header a {
   }
 }
 
-@media only screen and (max-width: 1070px) {
+@media screen and (max-width: 1070px) {
+  header .nav-toggler {
+    display: block;
+    z-index: 30;
+  }
+
   header nav {
     position: fixed;
     background-color: $primary;
@@ -149,7 +162,7 @@ header a {
     }
   }
 
-  header .responsive-nav {
+  header .nav-active {
     transform: translateY(100vh);
 
     .nav-item {
@@ -158,6 +171,17 @@ header a {
       }
     }
   }
+  .line.toggle:nth-child(1) {
+    transform: rotate(-45deg) translate(-3.5px, 10px);
+  }
+
+  .line.toggle:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.toggle:nth-child(3) {
+    transform: rotate(45deg) translate(-3.5px, -10px);
+  }
 }
 
 /* ======= Home page ======= */
@@ -165,7 +189,7 @@ header a {
 .home {
   position: relative;
   width: 100vw;
-  height: 90vh;
+  min-height: 90vh;
   padding: 0 2rem;
   background-image: url("./images/simple-christmas-background.jpg");
   background-repeat: no-repeat;
@@ -179,7 +203,7 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
 

@@ -1,20 +1,29 @@
 import React from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 import logo from "../../images/logo1.svg";
-import { useRef } from "react";
+import { useState } from "react";
 
 function Navbar() {
-  const navRef = useRef();
+  const [active, setActive] = useState("nav-menu");
+  const [toggleIcon, setToggleIcon] = useState("nav-toggler");
+  const [toggleBtn, setToggleBtn] = useState("line");
 
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive-nav");
+  const navToggle = () => {
+    active === "nav-menu"
+      ? setActive("nav-menu nav-active")
+      : setActive("nav-menu");
+
+    toggleIcon === "nav-toggler"
+      ? setToggleIcon("nav-toggler toggle")
+      : setToggleIcon("nav-toggler");
+
+    toggleBtn === "line" ? setToggleBtn("line toggle") : setToggleBtn("line");
   };
-
   return (
     <header>
       <img src={logo} alt="logo" className="logo" />
-      <nav ref={navRef}>
-        <ul className="nav-menu ">
+      <nav>
+        <ul className={active}>
           <li className="nav-item">
             <a href="/Home">Domů</a>
           </li>
@@ -40,10 +49,10 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <div onClick={showNavbar} className="nav-toggler">
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+      <div onClick={navToggle} className={toggleIcon}>
+        <div className={toggleBtn}></div>
+        <div className={toggleBtn}></div>
+        <div className={toggleBtn}></div>
       </div>
     </header>
   );

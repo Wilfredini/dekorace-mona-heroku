@@ -14,7 +14,6 @@ class Home extends Component {
             hodnocení, pokud se vám bude něco z mé tvorby líbit, neváhejte se
             ozvat a něco spolu vymyslíme.
           </p>
-          <img src={imgHome} alt="tree minimize" className="img-home" />
         </div>
       </div>
     );
