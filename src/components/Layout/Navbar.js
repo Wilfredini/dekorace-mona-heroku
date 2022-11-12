@@ -40,12 +40,7 @@ function Navbar() {
             <a href="/Contact">Kontakt</a>
           </li>
           <li className="nav-item">
-            <a href="/register">Přihlásit</a>
-          </li>
-          <li className="nav-item">
-            <a href="/Register">
-              <FaRegUserCircle />
-            </a>
+            <a href="/Login">Přihlásit</a>
           </li>
         </ul>
       </nav>

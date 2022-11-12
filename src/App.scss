@@ -5,7 +5,7 @@ $dark: #111;
 $light: #f0f0f0;
 $success: #0fa;
 $info: #8e8461;
-$warning: #855c3a;
+$warning: #61745f;
 $danger: red;
 
 * {
@@ -36,13 +36,6 @@ header {
   transition: 1s;
 
   .nav-menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #465544;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -64,9 +57,6 @@ header {
       background-color: #fff;
       transition: 0.5s;
     }
-    &:last-child:after {
-      display: none;
-    }
 
     &:hover:after {
       width: 100%;
@@ -78,13 +68,6 @@ header {
     }
 
     &:last-child {
-      display: none;
-      transition: 1s;
-      margin-right: 0;
-    }
-
-    &:last-child a {
-      font-size: 25px;
       margin-right: 0;
     }
   }
@@ -156,20 +139,18 @@ header a {
     z-index: 10;
 
     .nav-menu {
-      text-align: center;
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #465544;
     }
   }
 
   header .nav-active {
     transform: translateY(100vh);
-
-    .nav-item {
-      &:last-child {
-        display: none;
-      }
-    }
   }
   .line.toggle:nth-child(1) {
     transform: rotate(-45deg) translate(-3.5px, 10px);
@@ -228,9 +209,8 @@ header a {
   }
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
 /* ====== Registration and Login ====== */
+
 .registration-container {
   background-image: url("./images/simple-christmas-background.jpg");
   background-position: center;
@@ -238,7 +218,7 @@ header a {
   background-size: cover;
   width: 100vw;
   max-height: 100vh;
-  height: 90vh;
+  min-height: 90vh;
 
   form {
     min-width: 270px;
@@ -249,3 +229,5 @@ header a {
     }
   }
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

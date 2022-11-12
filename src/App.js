@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 import { Routes, Route } from "react-router-dom";
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/Services" element={<Services />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>
       </div>
