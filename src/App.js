@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Layout/Footer";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>
+        <Footer />
       </div>
     );
   }

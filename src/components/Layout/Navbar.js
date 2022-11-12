@@ -1,5 +1,4 @@
 import React from "react";
-import { FaRegUserCircle } from "react-icons/fa";
 import logo from "../../images/logo1.svg";
 import { useState } from "react";
 
