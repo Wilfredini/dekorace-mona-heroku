@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home d-flex flex-column justify-content-center align-items-center text-center">
-        <div className="text-box p-3 bg-light rounded my-5">
+        <div className="text-box p-3 rounded my-5">
           <h1 className="text-primary">Vítám vás na svém webu Dekorace Mona</h1>
           <p className="text-info">
             Nechejte se ispirovat dekoracemi, které vytvoří tu správnou
