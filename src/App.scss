@@ -146,6 +146,10 @@ header a {
       justify-content: center;
       align-items: center;
       background-color: #465544;
+
+      .nav-item:last-child {
+        margin: 20px;
+      }
     }
   }
 
