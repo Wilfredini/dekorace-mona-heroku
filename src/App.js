@@ -23,7 +23,6 @@ class App extends Component {
           <Route path="/Products" element={<Products />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
