@@ -26,15 +26,6 @@ class App extends Component {
           <Route path="/Register" element={<Register />} />
         </Routes>
         <Footer />
-        <Routes>
-          <Route exact path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Products" element={<Products />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-        </Routes>
       </div>
     );
   }
