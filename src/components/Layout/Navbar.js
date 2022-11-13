@@ -1,6 +1,12 @@
 import React from "react";
 import logo from "../../images/logo1.svg";
 import { useState } from "react";
+import { HiHome } from "react-icons/hi";
+import { AiFillAliwangwang } from "react-icons/ai";
+import { FaRegHandshake } from "react-icons/fa";
+import { GiFlowerPot } from "react-icons/gi";
+import { FaRegAddressBook } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [active, setActive] = useState("nav-menu");
@@ -24,22 +30,39 @@ function Navbar() {
       <nav>
         <ul className={active}>
           <li className="nav-item">
-            <a href="/Home">Domů</a>
+            <a href="/Home">
+              <HiHome />
+              Domů
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/About">O mně</a>
+            <a href="/About">
+              <AiFillAliwangwang />O mně
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/Services">Služby</a>
+            <a href="/Services">
+              <FaRegHandshake />
+              Služby
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/Products">Produkty</a>
+            <a href="/Products">
+              <GiFlowerPot />
+              Produkty
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/Contact">Kontakt</a>
+            <a href="/Contact">
+              <FaRegAddressBook />
+              Kontakt
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/Login">Přihlásit</a>
+            <a href="/Login">
+              <FaUserCircle />
+              Přihlásit
+            </a>
           </li>
         </ul>
       </nav>

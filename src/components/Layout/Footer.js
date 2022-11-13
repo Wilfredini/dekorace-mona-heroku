@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer mt-sm-5 mt-3">
+    <div className="footer pt-sm-5 pt-3">
       <nav className="footer-nav">
         <ul className="footer-menu text-light">
           <li className="nav-item">
