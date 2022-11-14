@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer pt-sm-5 pt-3">
       <nav className="footer-nav">
-        <ul className="footer-menu text-light">
+        <ul className="footer-menu text-light text-center">
           <li className="nav-item">
             <a href="/Home">Domů</a>
           </li>
