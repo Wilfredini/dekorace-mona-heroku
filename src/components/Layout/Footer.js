@@ -15,7 +15,7 @@ function Footer() {
             <a href="/Services">Služby</a>
           </li>
           <li className="nav-item py-3">
-            <a href="/Products">Produkty</a>
+            <a href="/Gallery">Galerie</a>
           </li>
           <li className="nav-item py-3">
             <a href="/Contact">Kontakt</a>

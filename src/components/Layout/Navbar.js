@@ -47,9 +47,9 @@ function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/Products">
+            <a href="/Gallery">
               <GiFlowerPot />
-              Produkty
+              Galerie
             </a>
           </li>
           <li className="nav-item">

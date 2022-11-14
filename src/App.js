@@ -4,7 +4,7 @@ import Navbar from "./components/Layout/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Products from "./pages/Products";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -20,7 +20,7 @@ class App extends Component {
           <Route exact path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
-          <Route path="/Products" element={<Products />} />
+          <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
