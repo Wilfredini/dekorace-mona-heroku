@@ -33,6 +33,8 @@ class Products extends Component {
   render() {
     return (
       <div className="products text-center">
+        <div className="products-bg"></div>
+
         <h1 className="products-title">Prohlédněte si galerii mých výtvorů</h1>
         <div className="product-box d-flex flex-wrap justify-content-around align-items-center">
           <Card style={{ width: "18rem" }}>

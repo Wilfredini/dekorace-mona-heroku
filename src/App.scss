@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: 10vh;
   padding: 0 2rem;
   background: $primary;
   color: $secondary;
@@ -187,11 +187,19 @@ header a {
   width: 100%;
   height: 100%;
   padding: 130px 2rem 2rem 2rem;
-  background-image: url("./images/simple-christmas-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
+  .home-bg {
+    background-image: url("./images/simple-christmas-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: -1;
+  }
 
   .text-box {
     margin-top: 300px;
@@ -255,15 +263,23 @@ header a {
   width: 100%;
   min-height: 100%;
   padding: 130px 2rem 0 2rem;
-  background-image: url("./images/light-glass-decoration-darkness-yellow-candle-630661-pxhere.com.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
+  .about-bg {
+    background-image: url("./images/light-glass-decoration-darkness-yellow-candle-630661-pxhere.com.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: -1;
+  }
 
   .about-title {
     color: $light;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     font-family: "Great Vibes";
     font-size: 55px;
     border-radius: 15px;
@@ -279,34 +295,9 @@ header a {
 
   .about-text-box {
     color: $light;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 25px;
     border-radius: 25px;
-  }
-
-  .about-img-1 {
-    max-width: 400px;
-    height: 250px;
-    background-image: url("./images/night-leaf-fall-flower-spooky-dark-1358170-pxhere.com.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-  }
-  .about-img-2 {
-    max-width: 400px;
-    height: 250px;
-    background-image: url("./images/light-glass-decoration-darkness-yellow-candle-630661-pxhere.com.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-  }
-  .mona {
-    width: 150px;
-    height: 400px;
   }
 }
 @media screen and(max-width:500px) {
@@ -316,16 +307,22 @@ header a {
 }
 
 /* ====== Products ====== */
-
-.products {
-  width: 100%;
-  min-height: 100vh;
-  padding: 130px 2rem 0 2rem;
+.products-bg {
   background-image: url("./images/simple-christmas-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  z-index: -1;
+}
+.products {
+  width: 100%;
+  min-height: 100vh;
+  padding: 130px 2rem 0 2rem;
 
   .products-title {
     display: inline-block;

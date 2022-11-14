@@ -4,6 +4,7 @@ class About extends Component {
   render() {
     return (
       <div className="about text-center">
+        <div className="about-bg"></div>
         <h1 className="about-title mb-5">
           Ahoj, jmenuju se <span>Monika</span>
         </h1>
