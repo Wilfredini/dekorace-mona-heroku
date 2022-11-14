@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 70px;
   padding: 0 2rem;
   background: $primary;
   color: $secondary;
@@ -253,7 +253,7 @@ header a {
 
 .about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 130px 2rem 0 2rem;
   background-image: url("./images/light-glass-decoration-darkness-yellow-candle-630661-pxhere.com.jpg");
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ header a {
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 150px;
   padding: 0 2rem;
   background-color: #465544;
   display: flex;
@@ -358,20 +358,18 @@ header a {
     align-content: center;
     color: $light;
     list-style: none;
-  }
-
-  .footer-menu li {
-    margin: 10px 0;
+    margin: 0;
   }
 
   .footer-menu li a {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: $light;
     transition: 0.5s;
     border-radius: 5px;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 15px;
+    margin: 15px 5px;
 
     &:hover {
       color: $primary;
@@ -387,5 +385,9 @@ header a {
     opacity: 0.6;
   }
 }
-
+@media screen and(max-width:315px) {
+  .footer {
+    padding: 0 5px;
+  }
+}
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
