@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.scss";
 import Navbar from "./components/Layout/Navbar";
 
@@ -19,13 +19,15 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Route exact path="/Home" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Services" element={<Services />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Register" element={<Register />} />
+          </Suspense>
         </Routes>
         <Footer />
       </Router>
