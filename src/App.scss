@@ -101,6 +101,7 @@ header {
 }
 
 .logo {
+  z-index: 51;
   height: 50px;
   width: 250px;
 }
@@ -281,7 +282,7 @@ header a {
     color: $light;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: "Great Vibes";
-    font-size: 55px;
+    font-size: 40px;
     border-radius: 15px;
     padding: 30px 45px;
     display: inline-block;
