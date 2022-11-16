@@ -4,13 +4,13 @@ import Navbar from "./components/Layout/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Layout/Footer";
 
-const Home = React.lazy(() => import("./pages/Home"));
-const About = React.lazy(() => import("./pages/About"));
-const Services = React.lazy(() => import("./pages/Services"));
-const Gallery = React.lazy(() => import("./pages/Gallery"));
-const Contact = React.lazy(() => import("./pages/Contact"));
-const Register = React.lazy(() => import("./pages/Register"));
-const Login = React.lazy(() => import("./pages/Login"));
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const Gallery = lazy(() => import("./pages/Gallery"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Register = lazy(() => import("./pages/Register"));
+const Login = lazy(() => import("./pages/Login"));
 
 function App() {
   return (
