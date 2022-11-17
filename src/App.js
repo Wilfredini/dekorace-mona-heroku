@@ -1,9 +1,8 @@
-import React, { lazy } from "react";
+import React from "react";
 import "./App.scss";
 import Navbar from "./components/Layout/Navbar";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Layout/Footer";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -14,7 +13,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Routes>
         <Route exact path="/Home" element={<Home />} />
@@ -26,7 +25,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
