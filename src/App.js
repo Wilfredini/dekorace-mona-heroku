@@ -16,13 +16,13 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/Home" component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Services" component={Services} />
-          <Route path="/Gallery" component={Gallery} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Login" component={Login} />
-          <Route path="/Register" component={Register} />
+          <Route exact path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
