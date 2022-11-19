@@ -1,29 +1,28 @@
-import React, { Component } from "react";
+import React, { Component, lazy } from "react";
 import "./App.scss";
 import Navbar from "./components/Layout/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Layout/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const Gallery = lazy(() => import("./pages/Gallery"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
+          <Route exact path="/Home" component={Home} />
+          <Route path="/About" component={About} />
+          <Route path="/Services" component={Services} />
+          <Route path="/Gallery" component={Gallery} />
+          <Route path="/Contact" component={Contact} />
+          <Route path="/Login" component={Login} />
+          <Route path="/Register" component={Register} />
         </Routes>
         <Footer />
       </div>
