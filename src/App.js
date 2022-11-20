@@ -1,4 +1,4 @@
-import React, { Component, lazy } from "react";
+import React, { Component } from "react";
 import "./App.scss";
 import Navbar from "./components/Layout/Navbar";
 import { Routes, Route } from "react-router-dom";
@@ -16,13 +16,63 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
+          <Route
+            exact
+            path="/Home"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Home />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/About"
+            element={
+              <React.Suspense fallback="Loading...">
+                <About />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/Services"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Services />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/Gallery"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Gallery />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/Contact"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Contact />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/Login"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Login />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/Register"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Register />
+              </React.Suspense>
+            }
+          />
         </Routes>
         <Footer />
       </div>
