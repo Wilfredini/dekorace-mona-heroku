@@ -261,6 +261,10 @@ header a {
 /* ====== About ====== */
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100%;
   padding: 130px 2rem 0 2rem;
@@ -277,10 +281,14 @@ header a {
     width: 100vw;
     z-index: -1;
   }
+  .about-background {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
   .about-title {
     color: $light;
-    background-color: rgba(0, 0, 0, 0.7);
     font-family: "Great Vibes";
     font-size: 40px;
     border-radius: 15px;
@@ -296,17 +304,90 @@ header a {
 
   .about-text-box {
     color: $light;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 25px;
     border-radius: 25px;
   }
 }
 @media screen and(max-width:500px) {
   .about-bg {
-    background-position: right;
+    background-image: url("./images/light-glass-decoration-darkness-yellow-candle-mobile.jpg");
   }
 }
 
+/* ====== Contact ====== */
+
+.contact {
+  padding: 120px 2rem 2rem 2rem;
+  width: 100vw;
+  min-height: 100vh;
+
+  .contact-bg {
+    background-image: url("./images/simple-christmas-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .contact-box {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+
+    .contact-title {
+      color: $dark;
+    }
+
+    .contact-item {
+      line-height: 1.2;
+
+      .contact-item-title {
+        color: $primary;
+        font-size: 20px;
+        font-weight: 700;
+
+        & span {
+          font-size: 16px;
+          font-weight: 400;
+          color: $warning;
+        }
+      }
+    }
+    & svg {
+      color: $primary;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+  form {
+    background-color: $warning;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+
+  iframe {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    min-height: 400px;
+  }
+}
+
+@media screen and(max-width:500px) {
+  .contact {
+    padding: 60px 0 0 0;
+
+    .row {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
 /* ====== Gallery ====== */
 
 .gallery-bg {
