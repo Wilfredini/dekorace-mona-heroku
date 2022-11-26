@@ -52,7 +52,7 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div className="row pt-5 flex-wrap-wrap">
+          <div className="row flex-wrap pt-5">
             <div className="col-12 col-md-6 py-2">
               <Form className="p-4">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -82,7 +82,7 @@ class Contact extends Component {
                 </Button>
               </Form>
             </div>
-            <div className="col-12 col-md-6 py-2">
+            <div className="col-12 col-md-6 py-2 google-maps">
               <Poloha />
             </div>
           </div>
