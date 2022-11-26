@@ -5,7 +5,8 @@ import { ImHome } from "react-icons/im";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import Iframe from "react-iframe";
+import Poloha from "./Poloha";
+
 class Contact extends Component {
   render() {
     return (
@@ -14,7 +15,7 @@ class Contact extends Component {
         <div className="contact-box text-center">
           <h1 className="contact-title text-center">Kontaktujte mně</h1>
           <div className="row d-flex justify-content-center align-item-center w-100 py-5">
-            <div className="col-12 col-xs-6 col-md-3 ">
+            <div className="col-12 col-xs-6 col-md-3 py-3">
               <div className="contact-item d-flex flex-column  align-items-center">
                 <FaEnvelope />
                 <p className="contact-item-title">
@@ -22,7 +23,7 @@ class Contact extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-3 ">
+            <div className="col-12 col-sm-6 col-md-3 py-3">
               <div className=" contact-item d-flex flex-column  align-items-center">
                 <FaPhoneAlt />
                 <p className="contact-item-title">
@@ -30,7 +31,7 @@ class Contact extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-3 ">
+            <div className="col-12 col-sm-6 col-md-3 py-3">
               <div className=" contact-item d-flex flex-column align-items-center">
                 <ImHome />
                 <p className="contact-item-title">
@@ -39,7 +40,7 @@ class Contact extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-md-3 ">
+            <div className="col-12 col-sm-6 col-md-3 py-3">
               <div className="contact-item d-flex flex-column justify-content-center align-items-center">
                 <a href="https://www.facebook.com/profile.php?id=100078345931736">
                   <FaFacebookMessenger />
@@ -51,7 +52,7 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div className="row py-5">
+          <div className="row flex-wrap pt-5">
             <div className="col-12 col-md-6 py-2">
               <Form className="p-4">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -81,17 +82,8 @@ class Contact extends Component {
                 </Button>
               </Form>
             </div>
-            <div className="col-12 col-md-6 py-2">
-              <Iframe
-                class="gmap_iframe"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Moravský Písek,Velkomoravská 503&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              />
+            <div className="col-12 col-md-6 py-2 google-maps">
+              <Poloha />
             </div>
           </div>
         </div>
