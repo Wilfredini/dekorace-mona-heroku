@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express;
-const path = require("path");
 require("dotenv").config();
-console.log(process.env);
-const port = process.env.PORT || 5432;
+const path = require("path");
+const port = process.env.PORT;
 const sslRedirect = require("heroku-ssl-redirect").default;
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
