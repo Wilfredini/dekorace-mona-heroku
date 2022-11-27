@@ -45,4 +45,3 @@ export default function Poloha() {
     );
   }
 }
-apiKey: "REACT_APP_GOOGLE_MAPS_API_KEY";
