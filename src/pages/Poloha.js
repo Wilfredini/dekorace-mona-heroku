@@ -12,7 +12,7 @@ export default function Poloha() {
   const center = { lat: 48.983929, lng: 17.328741 };
   const markerCoor = { lat: 48.983929, lng: 17.328741 };
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   if (!isLoaded) return <div>Loading...</div>;
