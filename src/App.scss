@@ -307,13 +307,13 @@ header a {
     padding: 25px;
     border-radius: 25px;
   }
-}
-@media screen and(max-width:500px) {
-  .about-bg {
-    background-image: url("./images/light-glass-decoration-darkness-yellow-candle-mobile.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media (max-width: 500px) {
+    .about-bg {
+      background-image: url("./images/light-glass-decoration-darkness-yellow-candle-mobile.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
