@@ -18,6 +18,15 @@ class App extends Component {
         <Routes>
           <Route
             exact
+            path="/"
+            element={
+              <React.Suspense fallback="Loading...">
+                <Home />
+              </React.Suspense>
+            }
+          />
+          <Route
+            exact
             path="/Home"
             element={
               <React.Suspense fallback="Loading...">
