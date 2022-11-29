@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express;
-require("dotenv").config();
-process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
 const path = require("path");
 const port = process.env.PORT || 5432;
 const sslRedirect = require("heroku-ssl-redirect").default;

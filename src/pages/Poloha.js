@@ -7,7 +7,7 @@ import {
   MarkerF,
   InfoWindow,
 } from "@react-google-maps/api";
-
+require("dotenv").config();
 export default function Poloha() {
   const center = { lat: 48.983929, lng: 17.328741 };
   const markerCoor = { lat: 48.983929, lng: 17.328741 };
