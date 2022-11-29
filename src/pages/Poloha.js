@@ -1,5 +1,6 @@
 import React from "react";
 import ImgPoloha from "../images/Poloha.jpg";
+import "dotenv/config";
 
 import {
   GoogleMap,
